@@ -8,7 +8,7 @@
   import LandingPage from '@/components/LandingPage'
 
   export default {
-    name: 'pangu-space',
+    name: 'pangu-space-electron',
     components: {
       LandingPage
     }

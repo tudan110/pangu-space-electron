@@ -2,7 +2,9 @@
 
 > 盘古之白
 >
->  electron + vue + iview，桌面端程序 
+>  electron + vue + iview，桌面端程序 ，打包成可执行程序。
+
+![intro](README.assets/intro.png)
 
 #### Build Setup
 
