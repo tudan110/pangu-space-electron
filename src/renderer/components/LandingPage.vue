@@ -1,9 +1,9 @@
 <template>
   <div class="space">
     <h1>盘古之白</h1>
-    <div class="demo-split" ref="splitElement">
+    <div class="pangu-split" ref="splitElement">
       <Split v-model="split">
-        <div slot="left" class="demo-split-pane">
+        <div slot="left" class="pangu-split-pane">
           <Input
             v-model="input"
             type="textarea"
@@ -13,7 +13,7 @@
             placeholder="请输入内容"
           />
         </div>
-        <div slot="right" class="demo-split-pane">
+        <div slot="right" class="pangu-split-pane">
           <Input
             v-model="output"
             class="textarea-input"
@@ -37,8 +37,8 @@
     data () {
       return {
         split: 0.5,
-        minRows: 25,
-        maxRows: 28,
+        minRows: 50,
+        maxRows: 50,
         title: '空格处理',
         input: null,
         output: null
@@ -68,20 +68,21 @@
 
   body { font-family: 'Source Sans Pro', sans-serif; }
 
-  .demo-split {
-  position: absolute;
-  top: 80px;
-  left: 20px;
-  right: 20px;
-  bottom: 20px;
-  border: 1px solid #dcdee2;
-}
+  .pangu-split {
+    height: 1080px;
+    margin: 0 10px 10px 10px;
+    border: 1px solid #dcdee2;
+  }
 
-.demo-split-pane {
-  padding: 10px;
-  height: 100%;
-}
-.ivu-input-wrapper {
-  /* height: 100%; */
-}
+  .pangu-split-pane {
+    padding: 10px;
+  }
+
+  .ivu-split-trigger-bar-con.vertical {
+    display: none;
+  }
+
+  .ivu-split-pane, .ivu-split-pane.left-pane, .ivu-split-pane.right-pane {
+    height: 1080px;
+  }
 </style>
